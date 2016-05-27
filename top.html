@@ -1,0 +1,227 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="google-site-verification" content="yj4jiZ9A6ANm32v8WQGZ9hPhj0l_Vk9sV8tv3PEm5Gw" />
+<META http-equiv="Content-Type" content="text/html; charset=SHIFT_JIS">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 9.0.0.0 for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+<META name="description" content="研究開発のマネージメントでは、効率化のために技術ロードマップやポートフォリオが利用されます。それらの作成と運用のポイントを紹介。また、知財の系譜分析に関する報告書を掲載。">
+<META name="keywords" content="技術ロードマップ, 研究経営, 研究, 研究開発, R&D, 技術経営, 技術評価, ポートフォリオ, イノベーション, 産業, 産業技術, 鉱工業, 関根, せきねしげゆき, 関根重幸, 産総研, 産業技術総合研究所, 電総研, 電子技術総合研究所, ETL, Electrotechnical, AIST, 講演資料, 技術情報, 知財, 特許マップ, 独立行政法人">
+<title>Shigeyuki SEKINE HOME PAGE</title>
+<style type="text/css">
+<!--body {line-height : 140% ; }-->
+</style> 
+
+
+
+<SCRIPT language="JavaScript">
+
+if(document.images){
+ c3 = new Image();
+ c3.src="sekine.jpg";
+ b2 = new Image();
+ b2.src="sekine2.jpg";
+}
+else{
+ c3 = ""
+ b2 = ""
+ document.a1 = "" 
+}
+
+var nameMC1 = "yuki.gif";
+var heightMC1 = 120;
+var widthMC1 = 36;
+
+NS4 = (document.layers) ? 1 : 0;
+IE4 = (document.all) ? 1 : 0;
+VERSION4 = (NS4|IE4) ? 1 : 0;
+
+var styleMC1 = (NS4) ? "" : ".style";
+
+var objMC1 = new Array();
+var numObjMC1 = 10;
+var ptrMC1 = 5;
+
+function defObjMC1(ID) {
+if (NS4) {
+this.layer = new Layer (0);
+this.layer.visibility = "hidden";
+this.layer.document.write('<img src=\"'+nameMC1+'\" height=\"'+heightMC1+'\" width=\"'+widthMC1+'\" border=\"0\">');
+this.layer.document.close();
+} else {
+eval ('this.layer = document.all.MC1'+ID);
+}
+this.old = 6;
+}
+
+function testVisibilityMC1() {
+for(var x=0; x < numObjMC1; x++) {
+with (objMC1[x]) {
+if (old <numObjMC1) {
+if (++old == numObjMC1) eval('layer' +styleMC1 + '.visibility = "hidden"');
+}
+}
+}
+}
+
+function mouseEventMC1(e) {
+ptrMC1 = (++ptrMC1 < numObjMC1) ? ptrMC1 : 0;
+
+objMC1[ptrMC1].old = 0;
+
+if (NS4) {
+objMC1[ptrMC1].layer.visibility = "visible";
+objMC1[ptrMC1].layer.left = e.pageX ;
+objMC1[ptrMC1].layer.top = e.pageY + 5;
+} else {
+objMC1[ptrMC1].layer.style.visibility = "visible";
+objMC1[ptrMC1].layer.style.pixelLeft = event.clientX + document.body.scrollLeft ;
+objMC1[ptrMC1].layer.style.pixelTop = event.clientY + document.body.scrollTop + 5;
+}
+}
+
+function initMC1() {
+if (VERSION4) {
+for(var x=0; x<numObjMC1; x++) objMC1[x] = new defObjMC1(x) ;
+
+if (NS4) document.captureEvents(Event.MOUSEMOVE);
+document.onmousemove = mouseEventMC1;
+
+setInterval("testVisibilityMC1();",40);
+}
+}
+
+//レイヤーの数だけa[i]=…部分を増減して使ってください
+  var a = new Array()
+  a[0]  = new followingLAYER('flwLay0',10,20,100,'<img src=tyoko1.gif>')
+  a[1]  = new followingLAYER('flwLay1',46,20,200,'<img src=tyoko2.gif>')
+  a[2]  = new followingLAYER('flwLay2',80,20,300,'<img src=tyoko3.gif>')
+  a[3]  = new followingLAYER('flwLay3',114,20,400,'<img src=tyoko4.gif>')
+  a[4]  = new followingLAYER('flwLay4',148,20,500,'<img src=tyoko5.gif>') 
+  document.onmousemove = dofollow
+  if(document.layers)document.captureEvents(Event.MOUSEMOVE)//n4用
+  if(window.opera){//-oの全画面のEventを拾えないことへの対策
+    op_dmydoc ='<div id="dmy" style="position:absolute;z-index:0'
+              +'                     left:100%;top:100%"></div> '
+    document.write(op_dmydoc)
+  }
+  //--イベント発生時にマウス追跡実行
+  function dofollow(e){
+    for(var i=0 ; i < a.length ; i++ )
+      setTimeout("a["+i+"].moveLAYER(a["+i+"].layName,"
+         +(getMouseX(e)+a[i].ofx)+","+(getMouseY(e)+a[i].ofy)+")"
+         ,a[i].delay)
+  }
+  //--追跡オブジェクト
+  //e4,e5,e6,n4,n6,n7,m1,o6,o7,s1用
+  function followingLAYER(layName,ofx,ofy,delay,html){
+    this.layName = layName   //マウスを追跡させるレイヤー名
+    this.ofx     = ofx       //マウスから右方向へ何ピクセル離すか
+    this.ofy     = ofy       //マウスから下方向へ何ピクセル離すか
+    this.delay   = delay     //マウスを追跡するタイミング
+    if(document.layers)
+      this.div='<layer name="'+layName+'" left="-100" top="-100">\n'
+              + html +'</layer>\n'
+    else
+      this.div='<div id="'+layName+'"\n'
+              +'style="position:absolute;left:-100px;top:-100px">\n'
+              + html +'</div>\n'
+    document.write(this.div)
+  }
+  followingLAYER.prototype.moveLAYER = moveLAYER //メソッドを追加する
+  //--レイヤー移動
+  function moveLAYER(layName,x,y){
+    if(document.getElementById){        //e5,e6,n6,n7,m1,o6,o7,s1用
+        document.getElementById(layName).style.left = x
+        document.getElementById(layName).style.top  = y
+    } else if(document.all){            //e4用
+        document.all(layName).style.pixelLeft = x
+        document.all(layName).style.pixelTop  = y
+    } else if(document.layers)          //n4用
+        document.layers[layName].moveTo(x,y)
+  }
+  //--マウスX座標get
+  function getMouseX(e){
+    if(navigator.userAgent.search(
+             "Opera(\ |\/)6") != -1 )   //o6用
+        return e.clientX
+    else if(document.all)               //e4,e5,e6用
+        return document.body.scrollLeft+event.clientX
+    else if(document.layers ||
+            document.getElementById)    //n4,n6,n7,m1,o7,s1用
+        return e.pageX
+  }
+  //--マウスY座標get
+  function getMouseY(e){
+    if(navigator.userAgent.search(
+             "Opera(\ |\/)6") != -1 )   //o6用
+        return e.clientY
+    else if(document.all)               //e4,e5,e6用
+        return document.body.scrollTop+event.clientY
+    else if(document.layers ||
+            document.getElementById)    //n4,n6,n7,m1,o7,s1用
+        return e.pageY
+  }
+</script>
+
+</head>
+<BODY bgcolor="white" background="yuki.jpg" lang="JA" link="blue" vlink="blue" style="tab-interval:42.0pt"><br>
+<P><IMG src="button7.gif" width="323" height="39" border="0"><BR>
+<br>
+<br>
+<A href="#" onmouseover="document.a1.src='sekine2.jpg'" onmouseout="document.a1.src='sekine.jpg'"><IMG SRC="sekine.jpg" NAME="a1" BORDER="0" ALIGN="LEFT" HSPACE="20"></A><BR>
+<!--写真二枚が入れ替わる--><B><span style='font-size:13.5pt;color:#000000'>関根　重幸<br>
+</span><span style='color:#006600'>Shigeyuki SEKINE, Dr.</span>
+<br>
+<br>
+<br>
+このページは、関根重幸の個人的責任において運用しているページです。<br>
+掲載内容についてのご意見は<a href="mailto:shigeyuki.sekine@aist.go.jp">こちら</a>まで<br>
+<br>
+<br>
+</B></P>
+
+<HR size="3" width="100%" noshade color="#00cc99" align="center">
+<IMG src=button3.gif  width="50" height="40" border="0">
+<IMG src="logo10.gif" width="80" height="40" border="0"><br>
+　　〒305-8568<br>
+　　茨城県つくば市梅園1-1-1<br>
+　　国立研究開発法人　産業技術総合研究所<br>
+　　イノベーション推進本部　技術マーケティング室<br>
+　　TEL: 029-861-5131<br>
+<!--　　FAX: 029-862-6045<br>-->
+　　e-mail: shigeyuki.sekine@aist.go.jp<br>
+</B>
+<HR size="3" width="100%" noshade color="#00cc99" align="center">
+  　　National Institute of Advanced Industrial Science and Technology (AIST)<br>
+　　1-1-1 Umezono, Tsukuba, Ibaraki 305-8568, Japan<br>
+　　TEL: +81-29-861-5131<br>
+<!--　　FAX: +81-29-862-6045<br>-->
+　　e-mail: shigeyuki.sekine@aist.go.jp<br>
+<HR size="3" width="100%" noshade color="#00cc99" align="center">
+<br>
+
+
+
+<!-- <IMG src=button3.gif  width="50" height="40" border="0">
+<IMG src="logo11.gif" width="80" height="40" border="0">
+<br><FONT color=#ff0000 size=4><B>「第２８回 産総研・技術情報セミナー」にて講演いたします。</B></FONT>
+<br>
+<br>日時： ２０１０年９月３日（金）　１３：００～１６：２０
+<br>場所： 産業技術総合研究所　つくばセンター
+<br>◆「三菱電機ロスナイの歴史と標準化戦略」
+<br>　熱交換型換気扇ロスナイの技術史。知財、標準化の経緯。標準の活用によるマーケット拡大。
+<br>◆「太陽光発電の普及と規制適正化」
+<br>　火力発電所と同等であった太陽光発電に関わる規制の適正化の歴史を振り返り、技術開発と並行して、関係する社会システム
+との適合を考えていく戦略の重要性を示す。
+<br>
+<br>詳しくは「産総研・技術情報セミナー」開催案内のページをご覧下さい。  -->
+<br>
+<br>
+
+
+
+<DIV align="right"><font size="2" color="#808080">2004JAN28開設</FONT><br>
+</DIV>
+</BODY>
+</html>
